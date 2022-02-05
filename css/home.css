@@ -1,0 +1,260 @@
+:root {
+    --nav_bar_text: 'Bungee', cursive;
+    --normal_text: 'Coda', cursive;
+    --hover_button: #F0A500;
+    --bg_color: #082032;
+    --quote: 'Shadows Into Light', cursive;
+    ;
+}
+
+#home-div {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-class {
+    font-size: 60px;
+    font-family: var(--nav_bar_text);
+    color: var(--hover_button);
+    margin: 100px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.link-class {
+    text-decoration: none;
+    color: #C996CC;
+}
+
+.link-class:hover {
+    color: var(--hover_button);
+}
+
+
+.rainbow-text-header {
+    margin: 200px 0 0 0;
+    font-family: var(--nav_bar_text);
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 5s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+#header-box {
+    margin-bottom: 100px;
+}
+
+#header-box>p {
+    color: white;
+    font-family: var(--nav_bar_text);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+
+/* about section */
+#about-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#about-div {
+    display: flex;
+    font-family: var(--normal_text);
+}
+
+/* profile image */
+#about-img-div>img {
+    height: 500px;
+    width: auto;
+    margin: 0 40px 0 0;
+}
+
+/* description */
+#about-text-div {
+    color: white;
+    text-align: justify;
+    width: 450px;
+    margin: 0 0 0 40px;
+    padding: 10px 0 0 0;
+}
+
+#about-text-div>ul>li {
+    margin: 30px 0 0 0;
+}
+
+#about-text-div>ul {
+    list-style: none;
+}
+
+#about-text-div>ul>li::before {
+    content: "\2022";
+    color: var(--hover_button);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+/* academic details */
+#credit-table-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-academic-div>p {
+    color: white;
+    font-family: var(--nav_bar_text);
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+/* table class */
+.table-div {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--nav_bar_text);
+    letter-spacing: 1px;
+    margin: 0 0 300px 0;
+}
+
+.table-cap-p {
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 20px;
+}
+
+.table-class {
+    border-collapse: collapse;
+    border-spacing: 1;
+    text-align: center;
+}
+
+.table-class thead th {
+    background-color: var(--hover_button);
+    color: #09012D;
+    text-align: center;
+    padding: 12px;
+    width: 120px;
+}
+
+.table-class tbody tr:nth-child(even) {
+    background-color: #5338c7;
+}
+
+.table-class tbody td {
+    color: rgb(245, 245, 245);
+    padding: 5px;
+}
+
+
+/*  HOBBIES  */
+.bold-p {
+    font-family: var(--nav_bar_text);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 50px 0;
+}
+
+.hobby-img-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobby-img-div>div>img {
+    height: 320px;
+    transition: 0.4s;
+}
+
+.hobby-img-div>div>img:hover {
+    transform: scale(1.1);
+    /* border: 2px var(--hover_button) solid; */
+    transition: 0.5s;
+}
+
+/* quotes */
+#quote-div {
+    background-color: #4a4ab9;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 300px 0;
+}
+
+#quote-div>q {
+    font-family: var(--quote);
+    font-size: 40px;
+    font-style: italic;
+    color: white;
+}
+
+#quote-person {
+    font-family: var(--quote);
+    font-size: 40px;
+    color: var(--hover_button);
+    text-align: end;
+}
+
+/* CONTACT */
+#contact-div {
+    height: 400px;
+    width: 800px;
+    background: #5338c7;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    #contact-div > p{
+        margin: 20px 0;
+    }
+#social-link-div{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 30px 0 0 0;
+}
+.link{
+    transition: 0.6s;
+}
+.link:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+
+/* FOOTER */
+#footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#footer-div > p{
+    font-family: var(--normal_text);
+    font-size: 15px;
+    color: var(--hover_button);
+    letter-spacing: 2px;
+}

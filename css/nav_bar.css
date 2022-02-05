@@ -1,0 +1,86 @@
+:root{
+    --header_font:'Bangers', cursive;
+    --nav_bar_text:'Bungee', cursive;
+    --hover_button: #F0A500;   
+    --bg_color: #082032;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(#070127, #2e0c7e);
+    background-repeat: no-repeat;
+    background-color: #29708C;
+    font-family: Verdana;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar-div{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background-color: #09012D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    #nav-bar-div > ul{
+        list-style: none;
+        width: 70%;
+        display: flex;
+        justify-content:end;
+    }
+    /* nav bar header  */
+    #nav-bar-div > a{
+        width: 20%;
+        text-decoration: none;
+        font-family: var(--nav_bar_text);
+        font-size: 30px;
+        color: var(--hover_button);
+        transition: 0.4s;
+    }
+    #nav-bar-div > a:hover{
+        letter-spacing: 3px;
+        transition: 0.4s;
+    }    
+
+#nav-bar > a > li{
+    margin: 0px 6px;
+    padding: 0px 0 0 0;
+    height: 50px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--nav_bar_text);
+    color: rgb(255, 255, 255);
+}
+    #nav-bar > a:hover{
+        background-color: var(--hover_button);
+        transition: 0.5s;
+    }
+    #nav-bar > a > li:hover{
+        color: var(--bg_color);
+        transition: 0.5s;
+    }
+.nav-bar-element{
+    text-decoration: none;
+}
+
+
+/* footer div */
+#footer-div{
+    height: 80px;
+    width: 100%;
+    background-color: #09012D;
+}
